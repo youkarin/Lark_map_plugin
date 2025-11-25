@@ -24,9 +24,56 @@
         width: 100%;
         height: 100%;
       }
+      /* 顶部控制面板 */
+      #controls {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        z-index: 1000;
+        background: rgba(255, 255, 255, 0.95);
+        border-radius: 8px;
+        padding: 8px 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+        font-size: 12px;
+        max-width: 90%;
+      }
+      #controls label {
+        margin-right: 4px;
+      }
+      #controls select {
+        margin-right: 6px;
+        margin-bottom: 4px;
+        font-size: 12px;
+      }
+      #controls button {
+        padding: 2px 8px;
+        font-size: 12px;
+        cursor: pointer;
+      }
+      #status {
+        margin-top: 4px;
+        color: #666;
+      }
     </style>
   </head>
   <body>
+    <div id="controls">
+      <div>
+        <label>表：</label>
+        <select id="tableSelect"></select>
+        <label>视图：</label>
+        <select id="viewSelect"></select>
+      </div>
+      <div>
+        <label>名称字段：</label>
+        <select id="nameFieldSelect"></select>
+        <label>位置字段：</label>
+        <select id="locFieldSelect"></select>
+        <button id="loadBtn">加载</button>
+      </div>
+      <div id="status">初始化中...</div>
+    </div>
+
     <div id="map"></div>
 
     <!-- Lark Base JS SDK（UMD） -->
