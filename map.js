@@ -39,8 +39,8 @@
       const fields = await table.getFieldList();
 
       // TODO: 如果你的字段名不是“门店名称”和“位置”，这里改成你的真实字段名
-      const nameField = fields.find((f) => f.name === "门店名称");
-      const locField = fields.find((f) => f.name === "位置"); // 位置字段（带经纬度）
+      const nameField = fields.find((f) => f.name === "Clienti");
+      const locField = fields.find((f) => f.name === "map"); // 位置字段（带经纬度）
 
       if (!nameField || !locField) {
         console.error("字段未找到", { nameField, locField, fields });
