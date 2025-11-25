@@ -2,7 +2,7 @@
 <html lang="zh-CN">
   <head>
     <meta charset="UTF-8" />
-    <title>Lark 地图插件（Leaflet 版）</title>
+    <title>Lark 地图插件（Leaflet）</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <!-- Leaflet 样式 -->
@@ -29,13 +29,11 @@
   <body>
     <div id="map"></div>
 
-    <!-- Lark Base JS SDK（UMD，直接挂在 window 上） -->
+    <!-- Lark Base JS SDK（UMD） -->
     <script src="https://unpkg.com/@lark-base-open/js-sdk/dist/js-sdk.umd.js"></script>
-
-    <!-- Leaflet JS -->
+    <!-- Leaflet -->
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-
-    <!-- 你的业务逻辑 -->
+    <!-- 业务逻辑 -->
     <script src="./map.js"></script>
   </body>
 </html>
